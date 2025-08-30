@@ -1,0 +1,57 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*Estilo general (fuentes y corrige el molesto margen en blanco)*/
+*{
+    margin: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: normal;
+}
+/*header*/
+.head-container{
+    color: white;
+    background-color: rgb(76, 175, 80);
+    line-height: 5vh;
+    padding: 20px;
+}
+
+/*main*/
+.main-container{
+    display: flex;
+    padding: 20px;
+}
+
+.card{
+    padding: 12px;
+}
+
+.card>p{
+    padding-top: 12px;
+}
+
+/*Footer*/
+.footer-container{
+    background-color: rgb(33, 150, 243);
+    color: white;
+    line-height: 5vh;
+    padding: 20px;
+}
+
+/*Botones*/
+.action-buttons, #importedImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-buttons>button{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
