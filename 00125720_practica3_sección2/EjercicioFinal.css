@@ -1,0 +1,39 @@
+:root{
+    --blue:#1e90ff;
+    --white: #ffffff;
+    --pink: #E12AFB;
+    --green: #1a7019;
+}
+
+.shopping-cart{
+    animation: slideIn 3s ease-in-out;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-pay{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+
+.btn-pay:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+/*Aparece desde arriba*/
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
