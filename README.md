@@ -13,6 +13,22 @@ Poder, se puede, pero no es muy recomendado ya que su forma puede representarse 
 
 ## Labo 4 Pregunta:
 **-¿Qué ocurre en cada caso presentado anteriormente con los operadores y porqué JS me permite esto?**
+
 En estos casos el operador realiza la operación y se le agrega/resta cantidad "y" al valor ya establecido.
+
 **-¿El comportamiento de los flujos de control es similar a otros lenguajes y ambientes de desarrollo?**
+
 Si, por lo general los flujos de control no varian mucho entre lenguajes.
+
+## Labo 5 Pregunta:
+**-¿Qué significa className en React?**
+
+ClassName es el sustituto de class en React, por lo que cumple su mismo proposito de ser un identificador.
+
+**-¿Las props tienen un limite?**
+
+No, pero hay que evitar abusar de ellas para tener un buen rendimiento
+
+**^-¿Quién define las props?**
+
+Son definidas por un componente "Padre"
