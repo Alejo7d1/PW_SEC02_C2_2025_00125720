@@ -2,9 +2,59 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { getImageUrl } from './utils.js';
+
+function MyButton(props){
+    return (
+        <button onClick={props.Fn}>Soy un boton custom y mi cuenta es: {props.count} </button>
+    )
+}
+
+function Avatar ({person, size}){
+  return(
+    <img
+      className='avatar'
+      src={getImageUrl(person)}
+      alt={person.name}
+      width={size}
+      height={size}
+    />
+  );
+}
+
+//Alternar export con el de abajo segun sea necesario
+export default function Profile(){
+  return (
+    <div>
+        <Avatar
+          size={100}
+          person={{
+            name: 'Katsuko Saruhshi',
+            imageId: 'YfeOqp2'
+          }}
+        />
+        <Avatar
+          size={80}
+          person={{
+            name: 'Aklilu Lemma',
+            imageId: 'OkS67lh' //La imagen no aparece
+          }}
+        />
+        <Avatar
+          size={50}
+          person={{
+            name: 'Lin Lanying',
+            imageId: '1bX5QH6'
+          }}
+        />
+    </div>
+  );
+}
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const increment = () => setCount((count) => count + 1);
 
   return (
     <>
@@ -18,9 +68,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <MyButton count={count} Fn={increment}/>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
@@ -32,4 +80,5 @@ function App() {
   )
 }
 
-export default App
+//No puede haber 2 export a la vez
+//export default App;
